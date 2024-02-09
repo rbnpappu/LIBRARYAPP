@@ -1,0 +1,117 @@
+/* style.module.css */
+
+/* Body styles (reset or adjustments) */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* List styles */
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+/* List item styles */
+.listItem {
+    display: none;
+}
+
+/* Card styles */
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    transition: box-shadow 0.3s ease;
+    flex-direction: column;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Cover image styles */
+.coverImgContainer {
+    width: 150px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.coverImg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Title styles */
+.title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Book info styles */
+.bookInfo {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Optional hover effect */
+.title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Search bar styles */
+.searchbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 300px; /* Set a maximum width */
+    margin-bottom: 20px;
+}
+
+.searchbar input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+.searchbar button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.searchBarContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbar button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .searchbar {
+        max-width: 100%; /* Adjust to full width on smaller screens */
+    }
+}
